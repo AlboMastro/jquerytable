@@ -37,43 +37,8 @@ a.btnRed {
     z-index: 2;
 }
 
-a.btnBlue {
-    background: #cfcfff;
-    border: 1px solid var(--blue);
-    color: var(--blue);
-    position: relative;
-    transition: color 1s;
-    z-index: 2;
-}
-
 a.myBtn:hover {
     color: white;
-}
-
-a.btnRed::before {
-    background: red;
-    content: '';
-    height: 100%;
-    left: -35px;
-    position: absolute;
-    top: 0;
-    transform: skewX(35deg);
-    transition: width 1s;
-    width: 0;
-    z-index: -1;
-}
-
-a.btnBlue::before {
-    background: var(--blue);
-    content: '';
-    height: 100%;
-    left: -35px;
-    position: absolute;
-    top: 0;
-    transform: skewX(35deg);
-    transition: width 1s;
-    width: 0;
-    z-index: -1;
 }
 
 a.myBtn:hover::before {
@@ -81,6 +46,7 @@ a.myBtn:hover::before {
 }
 
 body {
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgba(20, 20, 19, 0.955));
     font-family: 'Roboto', sans-serif;
 }
 
@@ -125,6 +91,7 @@ table {
     border: 1px solid var(--blue) !important;
     border-radius: 10px;
     overflow: hidden;
+    text-align: center;
 }
 
 table tbody tr:nth-child(even){
@@ -147,7 +114,6 @@ table.dataTable tbody td:last-child {
     display: flex;
     width: 125px;
     justify-content: space-around;
-    
 }
 
 .dataTables_filter {
@@ -259,7 +225,6 @@ table.dataTable tbody td:last-child {
     width: 100%;
 }
 
-/* footer */
 .wrapper-footer {
     display: flex;
     margin: 10px 0;
@@ -316,19 +281,6 @@ table.dataTable tbody td:last-child {
     z-index: 2;
     overflow: hidden;
     top: 35px;
-}
-
-#addbutton:before {
-    background:#7ab800;
-    content: '';
-    height: 100%;
-    left: -35px;
-    position: absolute;
-    top: 0;
-    transform: skewX(35deg);
-    transition: width 1s;
-    width: 0;
-    z-index: -1;
 }
 
 #addbutton:hover::before {
