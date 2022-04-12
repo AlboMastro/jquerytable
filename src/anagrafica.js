@@ -47,11 +47,11 @@ $(document).ready(function () {
     },
     {
       data: null,
-      title: "Actions",
+      title: "Comandi",
       name: "Actions",
       render: function (data, type, row, meta) {
         return (
-          '<a class="delbutton myBtn btnRed" href="#">Delete</a> </div>'
+          '<a class="delbutton myBtn btnRed" href="#">Elimina</a> </div>'
         );
       },
       disabled: true,
