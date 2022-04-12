@@ -126,7 +126,7 @@ table.dataTable tbody td:last-child {
 }
 
 .fa-plus-square:before {
-    content: 'Add' !important;
+    content: 'Aggiungi' !important;
     font-family: 'roboto';
 }
 
