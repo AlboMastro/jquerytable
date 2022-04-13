@@ -33,12 +33,12 @@ a.btnRed {
     border: 1px solid red;
     color: red;
     position: relative;
-    transition: color 1s;
+    transition: color 0.5s;
     z-index: 2;
 }
 
 a.myBtn:hover {
-    color: white;
+    color: rgb(255, 255, 255, 0.7);
 }
 
 a.myBtn:hover::before {
@@ -46,7 +46,7 @@ a.myBtn:hover::before {
 }
 
 body {
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgba(20, 20, 19, 0.955));
+    background-image: linear-gradient(to bottom right, rgb(47, 21, 21), rgba(59, 41, 41, 0.423));
     font-family: 'Roboto', sans-serif;
 }
 
@@ -67,7 +67,9 @@ h3 {
 nav {
     align-items: center;
     bottom: 0;
+    color: rgb(255, 255, 255, 0.7);
     display: flex;
+    font-size: 12px;
     position: relative;
     top: 0;
     width: 145px;
@@ -76,7 +78,7 @@ nav {
 
 nav span.menu {
     display: block;
-    color: var(--blue);
+    color: rgb(255, 255, 255, 0.7);
     position: fixed;
     top: 61%;
     right: -135px;
@@ -88,23 +90,30 @@ nav span.menu {
 
 table {
     border-collapse: collapse;
-    border: 1px solid var(--blue) !important;
+    border: 1px solid black;
     border-radius: 10px;
+    box-shadow:
+    inset 0 0 50px rgb(255, 255, 255, 0.3),     
+    inset 20px 0 80px rgb(255, 255, 255, 0.5),   
+    inset -20px 0 80px rgb(255, 255, 255, 0.3),  
+    inset 20px 0 300px rgb(255, 255, 255, 0.5),  
+    inset -20px 0 300px rgb(255, 255, 255, 0.3), 
+    0 0 50px rgb(255, 255, 255, 0.3),            
+    -10px 0 80px rgb(255, 255, 255, 0.2),        
+    10px 0 80px rgb(255, 255, 255, 0.2);  
+    color: black !important;
     overflow: hidden;
-    text-align: center;
+    text-align: center;    
 }
 
 table tbody tr:nth-child(even){
-    background: var(--light-gray);
-}
-
-tbody tr:hover {
-    box-shadow: 0 0 20px var(--light-gray) !important;
+    background: rgb(255, 255, 255, 0.6);
 }
 
 table.dataTable tbody td:last-child {
     padding: 5px 10px;
     justify-content: space-between;
+    text-align: center;
 }
 .container {
     margin: 0;
@@ -288,7 +297,7 @@ table.dataTable tbody td:last-child {
 }
 
 #addbutton:hover {
-    color: var(--white);
+    color: rgb(255, 255, 255, 0.7);
 }
 
 #example_wrapper {

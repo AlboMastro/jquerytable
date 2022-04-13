@@ -4,6 +4,7 @@ $(document).ready(function () {
       data: "id",
       title: "Id",
       type: "readonly",
+      visible: false,
     },
     {
       data: "RagSoc",
@@ -23,7 +24,7 @@ $(document).ready(function () {
     },
     {
       data: "CAP",
-      title: "CAP date",
+      title: "CAP",
     },
     {
       data: "PIVA",
