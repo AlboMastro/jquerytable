@@ -1,12 +1,6 @@
 $(document).ready(function () {
   const columns = [
     {
-      data: "id",
-      title: "Id",
-      type: "readonly",
-      visible: false,
-    },
-    {
       data: "RagSoc",
       title: "Ragione Sociale",
     },

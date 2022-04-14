@@ -300,6 +300,10 @@ table.dataTable tbody td:last-child {
     color: rgb(255, 255, 255, 0.7);
 }
 
+#alteditor-row- {
+    display: none;
+}
+
 #example_wrapper {
     padding-bottom: 40px;
 }
